@@ -4,6 +4,218 @@ body {
 	color: #263746;
 }
 
+/* ===== LandPage ===== */
+.hero-section {
+	background: linear-gradient(135deg, #e7f7ff 0%, #ffffff 60%, #fff7d6 100%);
+	overflow: hidden;
+}
+
+.eyebrow,
+.section-kicker {
+	color: #0877aa;
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.hero-title {
+	max-width: 620px;
+	color: #173c55;
+	font-size: clamp(2.4rem, 5vw, 4.5rem);
+	font-weight: 700;
+	line-height: 1.05;
+}
+
+.hero-title span {
+	color: #159bd3;
+}
+
+.hero-copy {
+	max-width: 540px;
+	color: #5d7180;
+	font-size: 1.15rem;
+	line-height: 1.7;
+}
+
+.hero-section .btn,
+.flight-search-form .btn {
+	border-radius: 9px;
+	font-weight: 700;
+}
+
+.hero-illustration {
+	position: relative;
+	min-height: 310px;
+	margin: auto;
+	max-width: 520px;
+	border-radius: 28px;
+	background-color: #bcecff;
+	box-shadow: 0 1.5rem 3rem rgba(8, 119, 170, 0.16);
+	overflow: hidden;
+}
+
+.cloud {
+	position: absolute;
+	color: rgba(255, 255, 255, 0.82);
+	font-size: 4rem;
+}
+
+.cloud-one {
+	top: 30px;
+	left: 34px;
+}
+
+.cloud-two {
+	right: 40px;
+	bottom: 35px;
+	font-size: 3rem;
+}
+
+.route-line {
+	position: absolute;
+	top: 50%;
+	left: 17%;
+	width: 66%;
+	border-top: 3px dashed rgba(8, 119, 170, 0.45);
+	transform: rotate(-14deg);
+}
+
+.plane-badge,
+.destination-pin {
+	position: absolute;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+}
+
+.plane-badge {
+	top: 41%;
+	left: 43%;
+	width: 66px;
+	height: 66px;
+	color: #ffffff;
+	background-color: #159bd3;
+	box-shadow: 0 0.75rem 1.5rem rgba(8, 119, 170, 0.24);
+	font-size: 1.75rem;
+	transform: rotate(-14deg);
+}
+
+.destination-pin {
+	width: 42px;
+	height: 42px;
+	color: #ffffff;
+	background-color: #f7c948;
+	font-size: 1.1rem;
+}
+
+.pin-one {
+	top: 27%;
+	right: 16%;
+}
+
+.pin-two {
+	bottom: 22%;
+	left: 14%;
+	background-color: #31b77a;
+}
+
+.search-section {
+	background-color: #ffffff;
+}
+
+.section-heading h2 {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	color: #173c55;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.section-heading p {
+	margin-bottom: 0;
+	color: #6c7d89;
+}
+
+.flight-search-form {
+	padding: 1.5rem;
+	border: 1px solid #e1edf3;
+	border-radius: 14px;
+}
+
+.flight-search-form .form-label {
+	color: #365466;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.flight-search-form .form-control,
+.flight-search-form .form-select {
+	min-height: 44px;
+	border-color: #d8e6ed;
+	border-radius: 8px;
+}
+
+.flight-search-form .form-control:focus,
+.flight-search-form .form-select:focus {
+	border-color: #159bd3;
+	box-shadow: 0 0 0 0.2rem rgba(21, 155, 211, 0.15);
+}
+
+.benefits-section {
+	background-color: #f4f9fc;
+}
+
+.benefit-card {
+	padding: 1.5rem;
+	border: 1px solid #e0edf3;
+	border-radius: 12px;
+	background-color: #ffffff;
+	box-shadow: 0 0.35rem 1rem rgba(38, 55, 70, 0.06);
+	transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.benefit-card:hover {
+	box-shadow: 0 0.8rem 1.6rem rgba(38, 55, 70, 0.12);
+	transform: translateY(-4px);
+}
+
+.benefit-card h3 {
+	margin-top: 1.2rem;
+	color: #173c55;
+	font-size: 1.15rem;
+}
+
+.benefit-card p {
+	margin-bottom: 0;
+	color: #6c7d89;
+	line-height: 1.6;
+}
+
+.benefit-icon {
+	display: grid;
+	width: 48px;
+	height: 48px;
+	place-items: center;
+	border-radius: 12px;
+	font-size: 1.35rem;
+}
+
+.icon-blue {
+	color: #0877aa;
+	background-color: #dff4ff;
+}
+
+.icon-yellow {
+	color: #986d00;
+	background-color: #fff2bd;
+}
+
+.icon-green {
+	color: #18744d;
+	background-color: #dff7eb;
+}
+
 /* ===== Header y logo ===== */
 .site-header .navbar {
 	--bs-primary: #159bd3;
