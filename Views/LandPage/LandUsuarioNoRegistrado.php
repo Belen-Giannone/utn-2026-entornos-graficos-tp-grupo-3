@@ -6,7 +6,7 @@ include '../../Views/Header/header.php';
 <main>
     <section class="hero-section">
         <div class="container py-5">
-            <div class="row align-items-center g-5">
+            <div class="hero-content row align-items-center">
                 <div class="col-lg-6">
                     <span class="eyebrow"><i class="bi bi-stars me-2" aria-hidden="true"></i>Tu próximo destino empieza acá</span>
                     <h1 class="hero-title mt-3">Viajá más simple con <span>ViajAR</span></h1>
@@ -23,29 +23,10 @@ include '../../Views/Header/header.php';
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="hero-illustration" aria-hidden="true">
-                        <i class="bi bi-cloud-fill cloud cloud-one"></i>
-                        <i class="bi bi-cloud-fill cloud cloud-two"></i>
-                        <div class="route-line"></div>
-                        <div class="plane-badge"><i class="bi bi-airplane-fill"></i></div>
-                        <div class="destination-pin pin-one"><i class="bi bi-geo-alt-fill"></i></div>
-                        <div class="destination-pin pin-two"><i class="bi bi-geo-alt-fill"></i></div>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
-
-    <section id="buscador-vuelos" class="search-section py-5">
-        <div class="container">
-            <div class="section-heading mb-4">
-                <span class="section-kicker">Planificá tu viaje</span>
-                <h2>¿A dónde querés volar?</h2>
-                <p>Completá los datos para comenzar a buscar tu próximo vuelo.</p>
-            </div>
-
-            <form class="flight-search-form bg-white shadow-sm" action="" method="get">
+        <div class="container hero-search-container">
+            <form id="buscador-vuelos" class="flight-search-form bg-white shadow-sm" action="" method="get">
                 <div class="row g-3 align-items-end">
                     <div class="col-md-6 col-lg-3">
                         <label class="form-label" for="origen"><i class="bi bi-airplane-engines me-1" aria-hidden="true"></i>Desde</label>

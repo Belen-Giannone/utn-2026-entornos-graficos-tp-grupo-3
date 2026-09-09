@@ -6,13 +6,22 @@ body {
 
 /* ===== LandPage ===== */
 .hero-section {
-	background: linear-gradient(135deg, #e7f7ff 0%, #ffffff 60%, #fff7d6 100%);
-	overflow: hidden;
+	position: relative;
+	min-height: 520px;
+	margin-bottom: 92px;
+	background-image: linear-gradient(rgba(9, 54, 82, 0.4), rgba(9, 54, 82, 0.4)), url("assets/img/portada.jpeg");
+	background-position: center;
+	background-size: cover;
+	overflow: visible;
+}
+
+.hero-content {
+	min-height: 350px;
 }
 
 .eyebrow,
 .section-kicker {
-	color: #0877aa;
+	color: #ffffff;
 	font-size: 0.8rem;
 	font-weight: 700;
 	letter-spacing: 0.08em;
@@ -21,19 +30,19 @@ body {
 
 .hero-title {
 	max-width: 620px;
-	color: #173c55;
+	color: #ffffff;
 	font-size: clamp(2.4rem, 5vw, 4.5rem);
 	font-weight: 700;
 	line-height: 1.05;
 }
 
 .hero-title span {
-	color: #159bd3;
+	color: #fff0a8;
 }
 
 .hero-copy {
 	max-width: 540px;
-	color: #5d7180;
+	color: rgba(255, 255, 255, 0.9);
 	font-size: 1.15rem;
 	line-height: 1.7;
 }
@@ -44,84 +53,13 @@ body {
 	font-weight: 700;
 }
 
-.hero-illustration {
-	position: relative;
-	min-height: 310px;
-	margin: auto;
-	max-width: 520px;
-	border-radius: 28px;
-	background-color: #bcecff;
-	box-shadow: 0 1.5rem 3rem rgba(8, 119, 170, 0.16);
-	overflow: hidden;
-}
-
-.cloud {
+.hero-search-container {
 	position: absolute;
-	color: rgba(255, 255, 255, 0.82);
-	font-size: 4rem;
-}
-
-.cloud-one {
-	top: 30px;
-	left: 34px;
-}
-
-.cloud-two {
-	right: 40px;
-	bottom: 35px;
-	font-size: 3rem;
-}
-
-.route-line {
-	position: absolute;
-	top: 50%;
-	left: 17%;
-	width: 66%;
-	border-top: 3px dashed rgba(8, 119, 170, 0.45);
-	transform: rotate(-14deg);
-}
-
-.plane-badge,
-.destination-pin {
-	position: absolute;
-	display: grid;
-	place-items: center;
-	border-radius: 50%;
-}
-
-.plane-badge {
-	top: 41%;
-	left: 43%;
-	width: 66px;
-	height: 66px;
-	color: #ffffff;
-	background-color: #159bd3;
-	box-shadow: 0 0.75rem 1.5rem rgba(8, 119, 170, 0.24);
-	font-size: 1.75rem;
-	transform: rotate(-14deg);
-}
-
-.destination-pin {
-	width: 42px;
-	height: 42px;
-	color: #ffffff;
-	background-color: #f7c948;
-	font-size: 1.1rem;
-}
-
-.pin-one {
-	top: 27%;
-	right: 16%;
-}
-
-.pin-two {
-	bottom: 22%;
-	left: 14%;
-	background-color: #31b77a;
-}
-
-.search-section {
-	background-color: #ffffff;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	transform: translateY(50%);
 }
 
 .section-heading h2 {
@@ -355,6 +293,19 @@ body {
 
 /*=====Diseño responsive===== */
 @media (max-width: 991.98px) {
+	.hero-section {
+		min-height: 620px;
+		margin-bottom: 190px;
+	}
+
+	.hero-content {
+		min-height: 430px;
+	}
+
+	.hero-search-container {
+		transform: translateY(35%);
+	}
+
 	.site-header .navbar-collapse {
 		padding: 1rem 0 0.5rem;
 	}
