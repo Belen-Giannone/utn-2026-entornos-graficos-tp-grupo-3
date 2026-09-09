@@ -4,6 +4,7 @@ body {
 	color: #263746;
 }
 
+/* ===== Header y logo ===== */
 .site-header .navbar {
 	--bs-primary: #159bd3;
 	--bs-primary-rgb: 21, 155, 211;
@@ -47,6 +48,7 @@ body {
 	background-color: rgba(255, 255, 255, 0.16);
 }
 
+/* ===== Botones del header ===== */
 .site-header .btn {
 	border-radius: 8px;
 	font-weight: 600;
@@ -63,6 +65,7 @@ body {
 	border-color: #fff4bd;
 }
 
+/*=====Footer=====*/
 .site-footer {
 	background-color: #172b3a !important;
 	border-top: 4px solid #159bd3;
@@ -138,6 +141,7 @@ body {
 	border-top: 1px solid rgba(185, 199, 209, 0.24);
 }
 
+/*=====Diseño responsive===== */
 @media (max-width: 991.98px) {
 	.site-header .navbar-collapse {
 		padding: 1rem 0 0.5rem;
